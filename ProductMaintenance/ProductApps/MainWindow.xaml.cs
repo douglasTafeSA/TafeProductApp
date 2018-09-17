@@ -40,6 +40,9 @@ namespace ProductApps
 
                 decimal wrapCharge = totalCharge + 5;
                 wrapChargeTextBlock.Text = Convert.ToString(wrapCharge);
+
+                decimal gstCharge = wrapCharge * (decimal)1.1;
+                gstChargeTextBlock.Text = Convert.ToString(gstCharge);
             }
             catch (FormatException)
             {
